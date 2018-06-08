@@ -8,7 +8,7 @@ def on_click(x,y, button, pressed):
 	m=str(now.minute)
 	s=str(now.second)
 	ss=ps.grab()
-	ss.save('/Users/lozog/screen'+h+"_"+m+"_"+s+'.png')
+	ss.save('screen'+h+"_"+m+"_"+s+'.png')
 
 with Listener (on_click=on_click) as listener:
 	listener.join()
